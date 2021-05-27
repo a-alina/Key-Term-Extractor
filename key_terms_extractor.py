@@ -20,14 +20,6 @@ class KeyTermsExtractor():
         self.key_terms_weighted = []
         self.text_extraxtion()
 
-    def __init__(self):
-        self.document = 'news.xml'
-        self.headers = []
-        self.news = []
-        self.key_terms = []
-        self.key_terms_weighted = []
-        self.text_extraxtion()
-
     def text_extraxtion(self):
         """Extracting the headers and the text"""
         root = etree.parse(self.document).getroot()
